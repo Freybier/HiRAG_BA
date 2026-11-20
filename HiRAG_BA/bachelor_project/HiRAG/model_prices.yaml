@@ -1,0 +1,33 @@
+# PROJECT ADDED: deployment token prices for project usage and cost reports.
+# Token prices per model for the HiRAG run-log cost calculation.
+#
+# Prices are per 1 MILLION tokens in the given currency. Replace the 0.0
+# placeholders with the real gateway prices. Models missing from this file
+# are listed under `unpriced_models` in the run summary and contribute no
+# cost. Cached (HiRAG LLM cache hit) tokens always cost 0.
+currency: USD
+models:
+  adapfkt_gpt5_6_terra:
+    input: 2.0
+    output: 12.0
+  adapfkt_gpt5_6_sol:
+    input: 4.0
+    output: 20.0
+  adapfkt_gpt6_1_terra:
+    input: 1.0
+    output: 5.0
+  adapfkt_gpt5_6_luna:
+    input: 0.2
+    output: 1.2
+  adapfkt_gpt6_luna:
+    input: 0.1
+    output: 0.5
+  adapfkt_gpt6_1_sol:
+    input: 2.0
+    output: 10.0
+  adapfkt_gpt5:
+    input: 1.25
+    output: 10.0
+  adapfkt_ada_002:
+    input: 0.1
+    output: 0.0

@@ -1,0 +1,2780 @@
+{
+  "upstream_repository": "https://github.com/hhy-huang/HiRAG",
+  "upstream_commit": "67b2dfa928f89d5ab13f7602544a42352f262806",
+  "baseline_basis": "Default main branch was unchanged throughout 2026-08-10 through 2026-10-06; original clone branch is assumed main.",
+  "project_commit": "73f028b34280909b4f842183945e3337d0cd6a66",
+  "scope": "bachelor_project/HiRAG; sibling bachelor_project modules are outside the vendored clone.",
+  "comparison": "Compare saved project commit with upstream Python ASTs, ignoring comments, docstrings, and source formatting. Cross-file LLM copies are compared to their upstream source. Current uncommitted comment additions do not affect classification.",
+  "authorship_limit": "PROJECT identifies differences in the saved project copy; it does not establish personal authorship or recover deleted local commits.",
+  "markers": {
+    "PROJECT ADDED": "New definition or executable block absent from the corresponding upstream source.",
+    "PROJECT MODIFIED": "Existing definition or block changed relative to the corresponding upstream source.",
+    "UPSTREAM COPY": "Inherited code copied to another path; unchanged definitions are not marked as project additions.",
+    "PROJECT TEXT ONLY": "Only trailing whitespace inside a string literal differs; not an implementation change."
+  },
+  "files": [
+    {
+      "path": "case/cluster_sparsity.py",
+      "upstream_source": "case/cluster_sparsity.py",
+      "definitions": [],
+      "blocks": [],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:numpy:np"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "case/cluster_sparsity_ratio.py",
+      "upstream_source": "case/cluster_sparsity_ratio.py",
+      "definitions": [],
+      "blocks": [],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:numpy:np"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "case/connect_case.py",
+      "upstream_source": "case/connect_case.py",
+      "definitions": [],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "case/graph_sparsity.py",
+      "upstream_source": "case/graph_sparsity.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "GLM_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseepk_model_if_cache",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:hirag",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:json:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:time:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:argparse:None"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:tqdm"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:networkx.linalg.algebraicconnectivity"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "case/graphml_visualize.py",
+      "upstream_source": "case/graphml_visualize.py",
+      "definitions": [
+        {
+          "name": "graphml_to_json",
+          "status": "unchanged"
+        },
+        {
+          "name": "create_html",
+          "status": "unchanged"
+        },
+        {
+          "name": "create_json",
+          "status": "unchanged"
+        },
+        {
+          "name": "start_server",
+          "status": "unchanged"
+        },
+        {
+          "name": "visualize_graphml",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "embedding_cache.py",
+      "upstream_source": null,
+      "definitions": [
+        {
+          "name": "embedding_cache_key",
+          "status": "added"
+        },
+        {
+          "name": "EmbeddingCache.__init__",
+          "status": "added"
+        },
+        {
+          "name": "EmbeddingCache.__len__",
+          "status": "added"
+        },
+        {
+          "name": "EmbeddingCache._load",
+          "status": "added"
+        },
+        {
+          "name": "EmbeddingCache.lookup",
+          "status": "added"
+        },
+        {
+          "name": "EmbeddingCache.add",
+          "status": "added"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "added"
+    },
+    {
+      "path": "estimate_hirag_tokens.py",
+      "upstream_source": null,
+      "definitions": [
+        {
+          "name": "load_prompts",
+          "status": "added"
+        },
+        {
+          "name": "count_tokens",
+          "status": "added"
+        },
+        {
+          "name": "chunk_record",
+          "status": "added"
+        },
+        {
+          "name": "main",
+          "status": "added"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "added"
+    },
+    {
+      "path": "eval/batch_eval.py",
+      "upstream_source": "eval/batch_eval.py",
+      "definitions": [
+        {
+          "name": "eval_oq_openai_batch",
+          "status": "unchanged"
+        },
+        {
+          "name": "batch_eval_gq_openai",
+          "status": "unchanged"
+        },
+        {
+          "name": "eval_oq_glm",
+          "status": "unchanged"
+        },
+        {
+          "name": "eval_oq_deepseek",
+          "status": "unchanged"
+        },
+        {
+          "name": "eval_oq_openai",
+          "status": "unchanged"
+        },
+        {
+          "name": "fetch_eval_result_glm",
+          "status": "unchanged"
+        },
+        {
+          "name": "fetch_eval_result_deepseek",
+          "status": "unchanged"
+        },
+        {
+          "name": "fetch_eval_result_openai",
+          "status": "unchanged"
+        },
+        {
+          "name": "fetch_eval_result_openai_batch",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "eval/cal_time.py",
+      "upstream_source": "eval/cal_time.py",
+      "definitions": [],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "eval/cal_tokens.py",
+      "upstream_source": "eval/cal_tokens.py",
+      "definitions": [],
+      "blocks": [],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:time:None"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:hirag"
+        },
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:numpy:np"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:openai"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:dataclasses"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:hirag.base"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:hirag._utils"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "eval/eval_mhqa.py",
+      "upstream_source": "eval/eval_mhqa.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "GLM_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "NV_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "gpt4omini_model_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "load_dataset",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_corpus",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_queries",
+          "status": "unchanged"
+        },
+        {
+          "name": "compute_em",
+          "status": "unchanged"
+        },
+        {
+          "name": "compute_f1",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:openai",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:time:None"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "eval/extract_context.py",
+      "upstream_source": "eval/extract_context.py",
+      "definitions": [
+        {
+          "name": "extract_unique_contexts",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "eval/extract_query.py",
+      "upstream_source": "eval/extract_query.py",
+      "definitions": [
+        {
+          "name": "extract_query",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "eval/insert_context_deepseek.py",
+      "upstream_source": "eval/insert_context_deepseek.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "GLM_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseepk_model_if_cache",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:hirag",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:time:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "eval/insert_context_glm.py",
+      "upstream_source": "eval/insert_context_glm.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "GLM_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "glm_model_if_cache",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:hirag",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:time:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "eval/insert_context_openai.py",
+      "upstream_source": "eval/insert_context_openai.py",
+      "definitions": [],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:hirag",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:time:None"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "eval/test_deepseek.py",
+      "upstream_source": "eval/test_deepseek.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "GLM_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseepk_model_if_cache",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:openai",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:WORKING_DIR",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:time:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "eval/test_glm.py",
+      "upstream_source": "eval/test_glm.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "GLM_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "glm_model_if_cache",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:openai",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:WORKING_DIR",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:time:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "eval/test_openai.py",
+      "upstream_source": "eval/test_openai.py",
+      "definitions": [],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "hi_insert_run.py",
+      "upstream_source": null,
+      "definitions": [
+        {
+          "name": "load_env_dev",
+          "status": "added"
+        },
+        {
+          "name": "count_tokens",
+          "status": "added"
+        },
+        {
+          "name": "load_jsonl_records",
+          "status": "added"
+        },
+        {
+          "name": "extract_source_id",
+          "status": "added"
+        },
+        {
+          "name": "load_model_prices",
+          "status": "added"
+        },
+        {
+          "name": "compute_costs",
+          "status": "added"
+        },
+        {
+          "name": "build_model_config",
+          "status": "added"
+        },
+        {
+          "name": "RunLogger.__post_init__",
+          "status": "added"
+        },
+        {
+          "name": "RunLogger.log_call",
+          "status": "added"
+        },
+        {
+          "name": "RunLogger.log_phase",
+          "status": "added"
+        },
+        {
+          "name": "RunLogger.log_model_config",
+          "status": "added"
+        },
+        {
+          "name": "RunLogger.build_summary",
+          "status": "added"
+        },
+        {
+          "name": "RunLogger.build_summary.bucket_of",
+          "status": "added"
+        },
+        {
+          "name": "RunLogger.log_summary",
+          "status": "added"
+        },
+        {
+          "name": "RunLogger._write",
+          "status": "added"
+        },
+        {
+          "name": "make_tracked_chat_func",
+          "status": "added"
+        },
+        {
+          "name": "make_tracked_chat_func.chat_func",
+          "status": "added"
+        },
+        {
+          "name": "make_tracked_embedding_func",
+          "status": "added"
+        },
+        {
+          "name": "make_tracked_embedding_func.embedding_func",
+          "status": "added"
+        },
+        {
+          "name": "parse_args",
+          "status": "added"
+        },
+        {
+          "name": "main",
+          "status": "added"
+        },
+        {
+          "name": "main.stage_factory",
+          "status": "added"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "added"
+    },
+    {
+      "path": "hi_Search_cohere.py",
+      "upstream_source": "hi_Search_cohere.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decorator",
+          "status": "unchanged"
+        },
+        {
+          "name": "COHERE_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "_format_history_for_cohere",
+          "status": "unchanged"
+        },
+        {
+          "name": "COHERE_model_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "main",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:typing",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:llm_config",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "Try:try:\n    COHERE_API_KEY = get_api_key('cohere')\n    COHERE_CHAT_MODEL = get_chat_model('co",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:yaml:None"
+        },
+        {
+          "scope": "module",
+          "key": "Try:try:\n    with open('config.yaml', 'r') as file:\n        config = yaml.safe_load(file)\nexce"
+        },
+        {
+          "scope": "module",
+          "key": "Try:try:\n    COHERE_API_KEY = config['cohere']['api_key']\n    COHERE_CHAT_MODEL = config['cohe"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "hi_Search_deepseek.py",
+      "upstream_source": "hi_Search_deepseek.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "GLM_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseepk_model_if_cache",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:hirag._storage",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:llm_config",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:openai",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:GLM_API_KEY",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:MODEL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:DEEPSEEK_API_KEY",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:DEEPSEEK_URL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:GLM_URL",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:logging:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:yaml:None"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:tqdm"
+        },
+        {
+          "scope": "module",
+          "key": "With:with open('config.yaml', 'r') as file:\n    config = yaml.safe_load(file)"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "hi_Search_glm.py",
+      "upstream_source": "hi_Search_glm.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "GLM_embedding",
+          "status": "modified"
+        },
+        {
+          "name": "glm_model_if_cache",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:hirag._storage",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:llm_config",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:openai",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:GLM_API_KEY",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:MODEL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:GLM_URL",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:yaml:None"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:tqdm"
+        },
+        {
+          "scope": "module",
+          "key": "With:with open('config.yaml', 'r') as file:\n    config = yaml.safe_load(file)"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "hi_Search_ollama.py",
+      "upstream_source": "hi_Search_ollama.py",
+      "definitions": [
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_ollama_async_client",
+          "status": "unchanged"
+        },
+        {
+          "name": "OLLAMA_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "OLLAMA_model_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "main",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:llm_config",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:OLLAMA_EMBEDDING_MODEL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:OLLAMA_CHAT_MODEL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:OLLAMA_URL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:OLLAMA_EMBEDDING_DIM",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:os:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:yaml:None"
+        },
+        {
+          "scope": "module",
+          "key": "Try:try:\n    with open('config.yaml', 'r') as file:\n        config = yaml.safe_load(file)\nexce"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "hi_Search_openai.py",
+      "upstream_source": "hi_Search_openai.py",
+      "definitions": [
+        {
+          "name": "_load_env_dev",
+          "status": "added"
+        },
+        {
+          "name": "_track_chat_call",
+          "status": "added"
+        },
+        {
+          "name": "_make_azure_client",
+          "status": "added"
+        },
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "OPENAI_embedding",
+          "status": "modified"
+        },
+        {
+          "name": "GLM_embedding",
+          "status": "modified"
+        },
+        {
+          "name": "_openai_request",
+          "status": "added"
+        },
+        {
+          "name": "OPENAI_model_if_cache",
+          "status": "modified"
+        },
+        {
+          "name": "make_stage_model_func",
+          "status": "added"
+        },
+        {
+          "name": "make_stage_model_func.stage_model_func",
+          "status": "added"
+        },
+        {
+          "name": "build_hirag",
+          "status": "added"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "import:sys:None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:pathlib",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:_SCRIPT_DIR",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "Expr:sys.path.insert(0, str(_SCRIPT_DIR))",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "Expr:sys.path.insert(0, str(_SCRIPT_DIR.parent))",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:dotenv",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "Expr:_load_env_dev()",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:hirag._storage",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:hirag._utils",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:llm_config",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:openai",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "Try:try:\n    import usage_logger as _usage_logger\nexcept ImportError:\n    _usage_logger = None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "Try:try:\n    from answer_prompt import ANSWER_LAYOUT_PROMPT as _ANSWER_LAYOUT_PROMPT\nexcept Im",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:OPENAI_EMBEDDING_MODEL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:OPENAI_MODEL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:OPENAI_API_KEY",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:OPENAI_URL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:OPENAI_API_VERSION",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:GLM_API_KEY",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:GLM_MODEL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:GLM_URL",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:_AZURE_HEADERS",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:(USE_STAGE_MODELS, STAGE_MODELS)",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:STAGE_MODELS['answer_generation']",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "if:__name__ == '__main__'",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:logging:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:yaml:None"
+        },
+        {
+          "scope": "module",
+          "key": "With:with open('config.yaml', 'r') as file:\n    config = yaml.safe_load(file)"
+        },
+        {
+          "scope": "module",
+          "key": "assign:graph_func"
+        },
+        {
+          "scope": "module",
+          "key": "With:with open('your .txt file path') as f:\n    graph_func.insert(f.read())"
+        },
+        {
+          "scope": "module",
+          "key": "Expr:print('Perform hi search:')"
+        },
+        {
+          "scope": "module",
+          "key": "Expr:print(graph_func.query('What are the top themes in this story?', param=QueryParam(mode='hi"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/__init__.py",
+      "upstream_source": "hirag/__init__.py",
+      "definitions": [],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "hirag/_cluster_utils.py",
+      "upstream_source": "hirag/_cluster_utils.py",
+      "definitions": [
+        {
+          "name": "global_cluster_embeddings",
+          "status": "modified"
+        },
+        {
+          "name": "local_cluster_embeddings",
+          "status": "modified"
+        },
+        {
+          "name": "fit_gaussian_mixture",
+          "status": "modified"
+        },
+        {
+          "name": "get_optimal_clusters",
+          "status": "unchanged"
+        },
+        {
+          "name": "GMM_cluster",
+          "status": "modified"
+        },
+        {
+          "name": "perform_clustering",
+          "status": "unchanged"
+        },
+        {
+          "name": "_handle_single_entity_extraction",
+          "status": "unchanged"
+        },
+        {
+          "name": "_handle_single_relationship_extraction",
+          "status": "unchanged"
+        },
+        {
+          "name": "ClusteringAlgorithm.perform_clustering",
+          "status": "unchanged"
+        },
+        {
+          "name": "Hierarchical_Clustering.perform_clustering",
+          "status": "modified"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:pathlib",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:typing",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "import:yaml:None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:1:_utils",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "from:1:base",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "from:1:prompt",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:_CONFIG_PATH_CANDIDATES",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:_CONFIG_PATH",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "With:with open(_CONFIG_PATH, 'r', encoding='utf-8') as f:\n    config = yaml.safe_load(f)",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:static_random",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:umap:None"
+        },
+        {
+          "scope": "module",
+          "key": "import:asyncio:None"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:sklearn.mixture"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/_llm.py",
+      "upstream_source": "hirag/_llm_backup.py",
+      "definitions": [
+        {
+          "name": "get_openai_async_client_instance",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_azure_openai_async_client_instance",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_deepseek_session",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_ollama_session",
+          "status": "unchanged"
+        },
+        {
+          "name": "openai_complete_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "gpt_4o_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "gpt_35_turbo_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "gpt_4o_mini_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "gpt_custom_model_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseek_complete_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseek_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "ollama_complete_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "ollama_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "openai_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_openai_complete_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_gpt_4o_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_gpt_4o_mini_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_openai_custom_model_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_openai_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseek_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "ollama_embedding",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:json:None"
+        }
+      ],
+      "status": "upstream_copy"
+    },
+    {
+      "path": "hirag/_llm_backup.py",
+      "upstream_source": "hirag/_llm_backup.py",
+      "definitions": [
+        {
+          "name": "get_openai_async_client_instance",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_azure_openai_async_client_instance",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_deepseek_session",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_ollama_session",
+          "status": "unchanged"
+        },
+        {
+          "name": "openai_complete_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "gpt_4o_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "gpt_35_turbo_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "gpt_4o_mini_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "gpt_custom_model_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseek_complete_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseek_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "ollama_complete_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "ollama_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "openai_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_openai_complete_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_gpt_4o_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_gpt_4o_mini_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_openai_custom_model_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "azure_openai_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "deepseek_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "ollama_embedding",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:json:None"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/_llm_cohere.py",
+      "upstream_source": "hirag/_llm.py",
+      "definitions": [
+        {
+          "name": "get_cohere_async_client_instance",
+          "status": "modified"
+        },
+        {
+          "name": "_format_chat_history_for_cohere",
+          "status": "unchanged"
+        },
+        {
+          "name": "cohere_complete_if_cache",
+          "status": "unchanged"
+        },
+        {
+          "name": "cohere_complete",
+          "status": "unchanged"
+        },
+        {
+          "name": "cohere_embedding",
+          "status": "unchanged"
+        },
+        {
+          "name": "example_main",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "Try:try:\n    import cohere\n    from cohere import CohereAPIError, CohereConnectionError\n    tr",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "import:cohere:None"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:cohere"
+        }
+      ],
+      "status": "upstream_copy_adapted"
+    },
+    {
+      "path": "hirag/_op.py",
+      "upstream_source": "hirag/_op.py",
+      "definitions": [
+        {
+          "name": "timer",
+          "status": "unchanged"
+        },
+        {
+          "name": "chunking_by_token_size",
+          "status": "unchanged"
+        },
+        {
+          "name": "chunking_by_seperators",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_chunks",
+          "status": "unchanged"
+        },
+        {
+          "name": "_handle_entity_relation_summary",
+          "status": "modified"
+        },
+        {
+          "name": "_handle_single_entity_extraction",
+          "status": "unchanged"
+        },
+        {
+          "name": "_handle_single_relationship_extraction",
+          "status": "unchanged"
+        },
+        {
+          "name": "_merge_nodes_then_upsert",
+          "status": "unchanged"
+        },
+        {
+          "name": "_merge_edges_then_upsert",
+          "status": "unchanged"
+        },
+        {
+          "name": "extract_hierarchical_entities",
+          "status": "modified"
+        },
+        {
+          "name": "extract_hierarchical_entities._process_single_content_entity",
+          "status": "modified"
+        },
+        {
+          "name": "extract_hierarchical_entities._process_single_content_relation",
+          "status": "modified"
+        },
+        {
+          "name": "extract_entities",
+          "status": "modified"
+        },
+        {
+          "name": "extract_entities._process_single_content",
+          "status": "modified"
+        },
+        {
+          "name": "_pack_single_community_by_sub_communities",
+          "status": "unchanged"
+        },
+        {
+          "name": "_pack_single_community_describe",
+          "status": "unchanged"
+        },
+        {
+          "name": "_community_report_json_to_str",
+          "status": "unchanged"
+        },
+        {
+          "name": "_community_report_json_to_str.finding_summary",
+          "status": "unchanged"
+        },
+        {
+          "name": "_community_report_json_to_str.finding_explanation",
+          "status": "unchanged"
+        },
+        {
+          "name": "generate_community_report",
+          "status": "modified"
+        },
+        {
+          "name": "generate_community_report._form_single_community_report",
+          "status": "unchanged"
+        },
+        {
+          "name": "_capture_enabled",
+          "status": "added"
+        },
+        {
+          "name": "_rendered_cell",
+          "status": "added"
+        },
+        {
+          "name": "_split_source_chunk_ids",
+          "status": "added"
+        },
+        {
+          "name": "_capture_community_section",
+          "status": "added"
+        },
+        {
+          "name": "_capture_entity_section",
+          "status": "added"
+        },
+        {
+          "name": "_capture_relation_section",
+          "status": "added"
+        },
+        {
+          "name": "_capture_text_unit_section",
+          "status": "added"
+        },
+        {
+          "name": "_capture_context",
+          "status": "added"
+        },
+        {
+          "name": "_capture_generation",
+          "status": "added"
+        },
+        {
+          "name": "_find_most_related_community_from_entities",
+          "status": "unchanged"
+        },
+        {
+          "name": "_find_most_related_text_unit_from_entities",
+          "status": "modified"
+        },
+        {
+          "name": "_find_most_related_edges_from_entities",
+          "status": "unchanged"
+        },
+        {
+          "name": "_find_most_related_edges_from_paths",
+          "status": "unchanged"
+        },
+        {
+          "name": "_build_local_query_context",
+          "status": "modified"
+        },
+        {
+          "name": "_build_hierarchical_query_context",
+          "status": "modified"
+        },
+        {
+          "name": "_build_hierarchical_query_context.find_path_with_required_nodes",
+          "status": "modified"
+        },
+        {
+          "name": "_build_hibridge_query_context",
+          "status": "modified"
+        },
+        {
+          "name": "_build_hibridge_query_context.find_path_with_required_nodes",
+          "status": "unchanged"
+        },
+        {
+          "name": "_build_higlobal_query_context",
+          "status": "modified"
+        },
+        {
+          "name": "_build_hilocal_query_context",
+          "status": "modified"
+        },
+        {
+          "name": "hierarchical_query",
+          "status": "modified"
+        },
+        {
+          "name": "hierarchical_bridge_query",
+          "status": "modified"
+        },
+        {
+          "name": "hierarchical_local_query",
+          "status": "modified"
+        },
+        {
+          "name": "hierarchical_global_query",
+          "status": "modified"
+        },
+        {
+          "name": "hierarchical_nobridge_query",
+          "status": "modified"
+        },
+        {
+          "name": "naive_query",
+          "status": "modified"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "import:numbers:None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "import:os:None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:1:_utils",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "Try:try:\n    from triplets.triplet_logger import log_triplet_extraction\nexcept ImportError:\n  ",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:CAPTURE_CHUNK_ID_KEY",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/_splitter.py",
+      "upstream_source": "hirag/_splitter.py",
+      "definitions": [
+        {
+          "name": "SeparatorSplitter.__init__",
+          "status": "unchanged"
+        },
+        {
+          "name": "SeparatorSplitter.split_tokens",
+          "status": "unchanged"
+        },
+        {
+          "name": "SeparatorSplitter._split_tokens_with_separators",
+          "status": "unchanged"
+        },
+        {
+          "name": "SeparatorSplitter._merge_splits",
+          "status": "unchanged"
+        },
+        {
+          "name": "SeparatorSplitter._split_chunk",
+          "status": "unchanged"
+        },
+        {
+          "name": "SeparatorSplitter._enforce_overlap",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "hirag/_storage/__init__.py",
+      "upstream_source": "hirag/_storage/__init__.py",
+      "definitions": [],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "Try:try:\n    from .gdb_neo4j import Neo4jStorage\nexcept ImportError:\n    Neo4jStorage = None",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "removed_blocks": [
+        {
+          "scope": "module",
+          "key": "from:1:gdb_neo4j"
+        }
+      ],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/_storage/gdb_neo4j.py",
+      "upstream_source": "hirag/_storage/gdb_neo4j.py",
+      "definitions": [
+        {
+          "name": "make_path_idable",
+          "status": "unchanged"
+        },
+        {
+          "name": "_sanitize_label",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.__post_init__",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage._init_workspace",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage._check_existing_data",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.index_start_callback",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.has_node",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.has_edge",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.node_degree",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.edge_degree",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.get_node",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.get_edge",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.get_node_edges",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.upsert_node",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.upsert_edge",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.clustering",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.community_schema",
+          "status": "text_whitespace_only"
+        },
+        {
+          "name": "Neo4jStorage.shortest_path",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.index_done_callback",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage._debug_delete_all_node_edges",
+          "status": "unchanged"
+        },
+        {
+          "name": "Neo4jStorage.subgraph_edges",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/_storage/gdb_networkx.py",
+      "upstream_source": "hirag/_storage/gdb_networkx.py",
+      "definitions": [
+        {
+          "name": "NetworkXStorage.load_nx_graph",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.write_nx_graph",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.stable_largest_connected_component",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage._stabilize_graph",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage._stabilize_graph._get_edge_key",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.__post_init__",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.index_done_callback",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.has_node",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.has_edge",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.get_node",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.node_degree",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.edge_degree",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.get_edge",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.get_node_edges",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.upsert_node",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.upsert_edge",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.clustering",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.community_schema",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage._cluster_data_to_subgraphs",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage._leiden_clustering",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.embed_nodes",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage._node2vec_embed",
+          "status": "unchanged"
+        },
+        {
+          "name": "NetworkXStorage.subgraph_edges",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "hirag/_storage/kv_json.py",
+      "upstream_source": "hirag/_storage/kv_json.py",
+      "definitions": [
+        {
+          "name": "JsonKVStorage.__post_init__",
+          "status": "unchanged"
+        },
+        {
+          "name": "JsonKVStorage.all_keys",
+          "status": "unchanged"
+        },
+        {
+          "name": "JsonKVStorage.index_done_callback",
+          "status": "unchanged"
+        },
+        {
+          "name": "JsonKVStorage.get_by_id",
+          "status": "unchanged"
+        },
+        {
+          "name": "JsonKVStorage.get_by_ids",
+          "status": "unchanged"
+        },
+        {
+          "name": "JsonKVStorage.filter_keys",
+          "status": "unchanged"
+        },
+        {
+          "name": "JsonKVStorage.upsert",
+          "status": "unchanged"
+        },
+        {
+          "name": "JsonKVStorage.drop",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "hirag/_storage/vdb_nanovectordb.py",
+      "upstream_source": "hirag/_storage/vdb_nanovectordb.py",
+      "definitions": [
+        {
+          "name": "_load_storage_stock",
+          "status": "added"
+        },
+        {
+          "name": "_load_storage_lean",
+          "status": "added"
+        },
+        {
+          "name": "LeanNanoVectorDB.__post_init__",
+          "status": "added"
+        },
+        {
+          "name": "LeanNanoVectorDB._storage",
+          "status": "added"
+        },
+        {
+          "name": "LeanNanoVectorDB.pre_process",
+          "status": "added"
+        },
+        {
+          "name": "LeanNanoVectorDB.save",
+          "status": "added"
+        },
+        {
+          "name": "NanoVectorDBStorage.__post_init__",
+          "status": "modified"
+        },
+        {
+          "name": "NanoVectorDBStorage.upsert",
+          "status": "unchanged"
+        },
+        {
+          "name": "NanoVectorDBStorage.query",
+          "status": "unchanged"
+        },
+        {
+          "name": "NanoVectorDBStorage.index_done_callback",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "import:base64:None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "import:json:None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "import:mmap:None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:_FLOAT",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:_SAVE_CHUNK_BYTES",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:_LOAD_CHUNK_CHARS",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/_utils.py",
+      "upstream_source": "hirag/_utils.py",
+      "definitions": [
+        {
+          "name": "always_get_an_event_loop",
+          "status": "unchanged"
+        },
+        {
+          "name": "extract_first_complete_json",
+          "status": "unchanged"
+        },
+        {
+          "name": "parse_value",
+          "status": "unchanged"
+        },
+        {
+          "name": "extract_values_from_json",
+          "status": "unchanged"
+        },
+        {
+          "name": "convert_response_to_json",
+          "status": "unchanged"
+        },
+        {
+          "name": "_get_tiktoken_encoder",
+          "status": "added"
+        },
+        {
+          "name": "encode_string_by_tiktoken",
+          "status": "modified"
+        },
+        {
+          "name": "decode_tokens_by_tiktoken",
+          "status": "modified"
+        },
+        {
+          "name": "truncate_list_by_token_size",
+          "status": "unchanged"
+        },
+        {
+          "name": "compute_mdhash_id",
+          "status": "unchanged"
+        },
+        {
+          "name": "write_json",
+          "status": "modified"
+        },
+        {
+          "name": "load_json",
+          "status": "unchanged"
+        },
+        {
+          "name": "pack_user_ass_to_openai_messages",
+          "status": "unchanged"
+        },
+        {
+          "name": "is_float_regex",
+          "status": "unchanged"
+        },
+        {
+          "name": "compute_args_hash",
+          "status": "unchanged"
+        },
+        {
+          "name": "get_stage_llm_func",
+          "status": "added"
+        },
+        {
+          "name": "get_stage_llm_func.stage_tracking_func",
+          "status": "added"
+        },
+        {
+          "name": "split_string_by_multi_markers",
+          "status": "unchanged"
+        },
+        {
+          "name": "enclose_string_with_quotes",
+          "status": "unchanged"
+        },
+        {
+          "name": "list_of_list_to_csv",
+          "status": "unchanged"
+        },
+        {
+          "name": "clean_str",
+          "status": "unchanged"
+        },
+        {
+          "name": "EmbeddingFunc.__call__",
+          "status": "unchanged"
+        },
+        {
+          "name": "limit_async_func_call",
+          "status": "unchanged"
+        },
+        {
+          "name": "limit_async_func_call.final_decro",
+          "status": "unchanged"
+        },
+        {
+          "name": "limit_async_func_call.final_decro.wait_func",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs",
+          "status": "unchanged"
+        },
+        {
+          "name": "wrap_embedding_func_with_attrs.final_decro",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "import:contextvars:None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:0:typing",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:hirag_current_stage",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/base.py",
+      "upstream_source": "hirag/base.py",
+      "definitions": [
+        {
+          "name": "StorageNameSpace.index_start_callback",
+          "status": "unchanged"
+        },
+        {
+          "name": "StorageNameSpace.index_done_callback",
+          "status": "unchanged"
+        },
+        {
+          "name": "StorageNameSpace.query_done_callback",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseVectorStorage.query",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseVectorStorage.upsert",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseKVStorage.all_keys",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseKVStorage.get_by_id",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseKVStorage.get_by_ids",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseKVStorage.filter_keys",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseKVStorage.upsert",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseKVStorage.drop",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.has_node",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.has_edge",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.node_degree",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.edge_degree",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.get_node",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.get_edge",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.get_node_edges",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.upsert_node",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.upsert_edge",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.clustering",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.community_schema",
+          "status": "unchanged"
+        },
+        {
+          "name": "BaseGraphStorage.embed_nodes",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:typing",
+          "status": "modified"
+        },
+        {
+          "scope": "QueryParam",
+          "key": "assign:capture",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/hirag.py",
+      "upstream_source": "hirag/hirag.py",
+      "definitions": [
+        {
+          "name": "determine_default_provider",
+          "status": "unchanged"
+        },
+        {
+          "name": "HiRAG.__post_init__",
+          "status": "modified"
+        },
+        {
+          "name": "HiRAG.insert",
+          "status": "unchanged"
+        },
+        {
+          "name": "HiRAG.query",
+          "status": "unchanged"
+        },
+        {
+          "name": "HiRAG.aquery",
+          "status": "unchanged"
+        },
+        {
+          "name": "HiRAG.ainsert",
+          "status": "modified"
+        },
+        {
+          "name": "HiRAG._insert_start",
+          "status": "unchanged"
+        },
+        {
+          "name": "HiRAG._insert_done",
+          "status": "unchanged"
+        },
+        {
+          "name": "HiRAG._query_done",
+          "status": "unchanged"
+        }
+      ],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "from:0:pathlib",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "import:yaml:None",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "from:1:_llm",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "from:1:_storage",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:_CONFIG_PATH_CANDIDATES",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:_CONFIG_PATH",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "With:with open(_CONFIG_PATH, 'r', encoding='utf-8') as f:\n    config = yaml.safe_load(f)",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:static_random",
+          "status": "added"
+        },
+        {
+          "scope": "HiRAG",
+          "key": "assign:graph_cluster_seed",
+          "status": "modified"
+        },
+        {
+          "scope": "HiRAG",
+          "key": "assign:node2vec_params",
+          "status": "modified"
+        },
+        {
+          "scope": "HiRAG",
+          "key": "assign:use_stage_models",
+          "status": "added"
+        },
+        {
+          "scope": "HiRAG",
+          "key": "assign:stage_models",
+          "status": "added"
+        },
+        {
+          "scope": "HiRAG",
+          "key": "assign:stage_model_func_factory",
+          "status": "added"
+        },
+        {
+          "scope": "HiRAG",
+          "key": "assign:stage_model_funcs",
+          "status": "added"
+        }
+      ],
+      "removed_definitions": [],
+      "status": "modified"
+    },
+    {
+      "path": "hirag/prompt.py",
+      "upstream_source": "hirag/prompt.py",
+      "definitions": [],
+      "blocks": [
+        {
+          "scope": "module",
+          "key": "assign:PROMPTS['community_report']",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:PROMPTS['hi_entity_extraction']",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:PROMPTS['hi_relation_extraction']",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:PROMPTS['summarize_entity_descriptions']",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:PROMPTS['entiti_continue_extraction']",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:PROMPTS['entiti_if_loop_extraction']",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:PROMPTS['summary_clusters']",
+          "status": "modified"
+        },
+        {
+          "scope": "module",
+          "key": "assign:PROMPTS['META_ENTITY_TYPES_HiRAG_STANDARD']",
+          "status": "added"
+        },
+        {
+          "scope": "module",
+          "key": "assign:PROMPTS['META_ENTITY_TYPES']",
+          "status": "modified"
+        }
+      ],
+      "removed_definitions": [],
+      "status": "modified"
+    },
+    {
+      "path": "setup.py",
+      "upstream_source": "setup.py",
+      "definitions": [],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "implementation_unchanged"
+    },
+    {
+      "path": "show-graph.py",
+      "upstream_source": null,
+      "definitions": [],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "added"
+    },
+    {
+      "path": "source_id_mapping.py",
+      "upstream_source": null,
+      "definitions": [
+        {
+          "name": "compute_full_doc_id",
+          "status": "added"
+        },
+        {
+          "name": "mapping_path",
+          "status": "added"
+        },
+        {
+          "name": "load_source_id_mapping",
+          "status": "added"
+        },
+        {
+          "name": "save_source_id_mapping",
+          "status": "added"
+        },
+        {
+          "name": "update_source_id_mapping",
+          "status": "added"
+        },
+        {
+          "name": "resolve_source_ids",
+          "status": "added"
+        }
+      ],
+      "blocks": [],
+      "removed_definitions": [],
+      "status": "added"
+    },
+    {
+      "path": "model_prices.yaml",
+      "status": "added"
+    },
+    {
+      "path": "requirements.txt",
+      "status": "text_modified"
+    },
+    {
+      "path": "readme.md",
+      "status": "text_modified"
+    },
+    {
+      "path": "LICENSE",
+      "status": "unchanged"
+    }
+  ],
+  "counts": {
+    "annotated_files": 34,
+    "added_functions": 63,
+    "modified_functions": 36,
+    "text_only_functions": 1,
+    "marked_non_method_blocks": 107
+  },
+  "omitted_upstream_files": [
+    ".gitignore",
+    "config.yaml",
+    "eval/datasets/agriculture/agriculture_eval_hi_fastgraphrag_result_openai.jsonl",
+    "eval/datasets/agriculture/agriculture_eval_hi_graphrag_result_openai.jsonl",
+    "eval/datasets/agriculture/agriculture_eval_hi_kag_result_openai.jsonl",
+    "eval/datasets/agriculture/agriculture_eval_hi_lightrag_result_openai.jsonl",
+    "eval/datasets/agriculture/agriculture_eval_hi_naive_result_openai.jsonl",
+    "eval/datasets/agriculture/agriculture_fastGraphrag_result_deepseek.jsonl",
+    "eval/datasets/agriculture/agriculture_graphrag_result_deepseek.jsonl",
+    "eval/datasets/agriculture/agriculture_hi_result_deepseek.jsonl",
+    "eval/datasets/agriculture/agriculture_kag_result_deepseek.jsonl",
+    "eval/datasets/agriculture/agriculture_lightrag_result_deepseek.jsonl",
+    "eval/datasets/agriculture/agriculture_naive_result_deepseek.jsonl",
+    "eval/datasets/agriculture/agriculture_query.jsonl",
+    "eval/datasets/agriculture/agriculture_unique_contexts.json",
+    "eval/datasets/cs/cs_eval_hi_fastgraphrag_result_openai.jsonl",
+    "eval/datasets/cs/cs_eval_hi_graphrag_result_openai.jsonl",
+    "eval/datasets/cs/cs_eval_hi_kag_result_openai.jsonl",
+    "eval/datasets/cs/cs_eval_hi_lightrag_result_openai.jsonl",
+    "eval/datasets/cs/cs_eval_hi_naive_result_openai.jsonl",
+    "eval/datasets/cs/cs_fastGraphrag_result_deepseek.jsonl",
+    "eval/datasets/cs/cs_graphrag_result_deepseek.jsonl",
+    "eval/datasets/cs/cs_hi_result_deepseek.jsonl",
+    "eval/datasets/cs/cs_kag_result_deepseek.jsonl",
+    "eval/datasets/cs/cs_lightrag_result_deepseek.jsonl",
+    "eval/datasets/cs/cs_naive_result_deepseek.jsonl",
+    "eval/datasets/cs/cs_query.jsonl",
+    "eval/datasets/cs/cs_unique_contexts.json",
+    "eval/datasets/legal/legal_eval_hi_fastgraphrag_result_openai.jsonl",
+    "eval/datasets/legal/legal_eval_hi_graphrag_result_openai.jsonl",
+    "eval/datasets/legal/legal_eval_hi_kag_result_openai.jsonl",
+    "eval/datasets/legal/legal_eval_hi_lightrag_result_openai.jsonl",
+    "eval/datasets/legal/legal_eval_hi_naiveR_result_openai.jsonl",
+    "eval/datasets/legal/legal_fastGraphrag_result_deepseek.jsonl",
+    "eval/datasets/legal/legal_graphrag_result_deepseek.jsonl",
+    "eval/datasets/legal/legal_hi_result_deepseek.jsonl",
+    "eval/datasets/legal/legal_kag_result_deepseek.jsonl",
+    "eval/datasets/legal/legal_lightrag_result_deepseek.jsonl",
+    "eval/datasets/legal/legal_naive_result_deepseek.jsonl",
+    "eval/datasets/legal/legal_query.jsonl",
+    "eval/datasets/legal/legal_unique_contexts.json",
+    "eval/datasets/mix/mix.jsonl",
+    "eval/datasets/mix/mix_eval.jsonl",
+    "eval/datasets/mix/mix_eval_hi.jsonl",
+    "eval/datasets/mix/mix_eval_hi_fastgraphrag_result_openai.jsonl",
+    "eval/datasets/mix/mix_eval_hi_graphrag_result_openai.jsonl",
+    "eval/datasets/mix/mix_eval_hi_hi_naiveR_baseindex_result_openai.jsonl",
+    "eval/datasets/mix/mix_eval_hi_kag_result_openai.jsonl",
+    "eval/datasets/mix/mix_eval_hi_lightrag_result_openai.jsonl",
+    "eval/datasets/mix/mix_eval_hi_naiveR_hi.jsonl",
+    "eval/datasets/mix/mix_eval_hi_naiveR_hi_result_openai.jsonl",
+    "eval/datasets/mix/mix_eval_hi_naive_result_openai.jsonl",
+    "eval/datasets/mix/mix_eval_lightrag_result_openai.jsonl",
+    "eval/datasets/mix/mix_eval_naive_result_openai.jsonl",
+    "eval/datasets/mix/mix_fastGraphrag_result_deepseek.jsonl",
+    "eval/datasets/mix/mix_graphrag_result_deepseek.jsonl",
+    "eval/datasets/mix/mix_hi_naiveR_result_deepseek.jsonl",
+    "eval/datasets/mix/mix_hi_naiveR_result_deepseek_baseindex.jsonl",
+    "eval/datasets/mix/mix_hi_result_deepseek.jsonl",
+    "eval/datasets/mix/mix_kag_result_deepseek.jsonl",
+    "eval/datasets/mix/mix_lightrag_result_deepseek.jsonl",
+    "eval/datasets/mix/mix_naive_result_deepseek.jsonl",
+    "eval/datasets/mix/mix_unique_contexts.json",
+    "imgs/hirag_ds.drawio.png",
+    "imgs/hirag_ds_trans.drawio.png",
+    "imgs/hirag_icon.png",
+    "imgs/hirag_image.png",
+    "imgs/icon.jpg",
+    "imgs/icon2.png"
+  ],
+  "validation": {
+    "python_files_checked": 44,
+    "function_markers_checked": 100,
+    "syntax": "passed",
+    "ast_unchanged_from_project_commit": true,
+    "executable_tokens_unchanged_after_line_ending_normalization": true
+  }
+}
